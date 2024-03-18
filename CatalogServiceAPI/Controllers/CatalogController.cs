@@ -44,6 +44,7 @@ ExpiryDate = DateTime.Now.AddDays(3), // Example expiry date 3 days from now
     public CatalogController(ILogger<CatalogController> logger)
     {
         _logger = logger;
+
     }
 
     [HttpGet("{productId}", Name = "GetProductById")]
@@ -55,6 +56,7 @@ ExpiryDate = DateTime.Now.AddDays(3), // Example expiry date 3 days from now
     public IEnumerable<Product> Get()
     {
         return _products;
+        //Det her er en test action kommentar
     }
 
     [HttpGet("version")]
